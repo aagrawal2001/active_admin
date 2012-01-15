@@ -117,7 +117,7 @@ module ActiveAdmin
 
         # Display a column for the id
         def id_column
-          column('ID', :sortable => :id){|resource| link_to resource.id, resource_path(:id => resource.id), :class => "resource_id_link"}
+          column('ID', :sortable => :id){|resource| link_to resource.id, resource_path(resource.id), :class => "resource_id_link"}
         end
 
         # Adds links to View, Edit and Delete
